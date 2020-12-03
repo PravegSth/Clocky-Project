@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clocky Alarm Clock</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'Fake/css/main.css' %}">
+
+</head>
+<body>
+    <!--    Bootstrap Navbar code-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="{% url 'list' %}">Clocky</a>
+<!--      <a class="navbar-brand" href="{% url 'amazon' %}" style="position: absolute; left: 100px;"><button class="btn btn-warning">Amazon</button> </a>-->
+      <a class="navbar-brand" href="{% url 'amazon' %}" style="position: absolute; left: 100px;"><button class="btn btn-warning">Amazon</button> </a>
+      <a class="navbar-brand" href="{% url 'ebay' %}" style="position: absolute; left: 200px;"><button class="btn btn-warning"> Ebay </button></a>
+      <a class="navbar-brand" href="{% url 'other' %}" style="position: absolute; left: 300px;"><button class="btn btn-warning"> Other </button></a>
+
+
+        <div class="form-inline my-2 my-lg-0">
+        <img  id="cart-icon" style="position: absolute; right: 10px;" src="{% static 'Fake/images/cart.png' %}">
+
+    </div>
+      </div>
+    </nav>
+    {% block content %}
+
+
+    {% endblock content %}
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

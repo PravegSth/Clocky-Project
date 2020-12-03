@@ -1,0 +1,170 @@
+{% extends 'Fake/main.html' %}
+{% load static %}
+{% block content %}
+<br>
+<center><h2>Log File Created</h2></center>
+<br>
+<center>
+    {% if page == 'clockyKey' %}
+        <a href="{% static 'Fake/log/clocky.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ALOW' %}
+        <a href="{% static 'Fake/log/Alarm_Clock_On_Wheels.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ALOW2' %}
+        <a href="{% static 'Fake/log/Alarm_Clock_On_Wheels2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RAC' %}
+        <a href="{% static 'Fake/log/Running_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RAC2' %}
+        <a href="{% static 'Fake/log/Running_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'CAC' %}
+        <a href="{% static 'Fake/log/Creative_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'CAC2' %}
+        <a href="{% static 'Fake/log/Creative_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RunAC' %}
+        <a href="{% static 'Fake/log/Runaway_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RunAC2' %}
+        <a href="{% static 'Fake/log/Runaway_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'EAC' %}
+        <a href="{% static 'Fake/log/Escape_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'EAC2' %}
+        <a href="{% static 'Fake/log/Escape_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'WAC' %}
+        <a href="{% static 'Fake/log/Wheel_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'WAC2' %}
+        <a href="{% static 'Fake/log/Wheel_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'JAC' %}
+        <a href="{% static 'Fake/log/Jumping_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'JAC2' %}
+        <a href="{% static 'Fake/log/Jumping_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'AW' %}
+        <a href="{% static 'Fake/log/Alarm_Wheels.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'AW2' %}
+        <a href="{% static 'Fake/log/Alarm_Wheels2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'MAC' %}
+        <a href="{% static 'Fake/log/Moving_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'MAC2' %}
+        <a href="{% static 'Fake/log/Moving_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RRAC' %}
+        <a href="{% static 'Fake/log/Run_Alarm_Clock.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RRAC2' %}
+        <a href="{% static 'Fake/log/Run_Alarm_Clock2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES1' %}
+        <a href="{% static 'Fake/log/alarma_fugitivo.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES2' %}
+        <a href="{% static 'Fake/log/despertador_sobre_ruedas.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES3' %}
+        <a href="{% static 'Fake/log/reloj_despertador_fugitivo.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES4' %}
+        <a href="{% static 'Fake/log/clockySpain.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES51' %}
+        <a href="{% static 'Fake/log/depertador_creativo1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES52' %}
+        <a href="{% static 'Fake/log/depertador_creativo2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ES6' %}
+        <a href="{% static 'Fake/log/despertador_ruedas.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT11' %}
+        <a href="{% static 'Fake/log/sveglia_scappa1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT12' %}
+        <a href="{% static 'Fake/log/sveglia_scappa2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT21' %}
+        <a href="{% static 'Fake/log/sveglia_con_le_ruote1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT22' %}
+        <a href="{% static 'Fake/log/sveglia_con_le_ruote2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT31' %}
+        <a href="{% static 'Fake/log/orologio_ruote1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT32' %}
+        <a href="{% static 'Fake/log/orologio_ruote2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT41' %}
+        <a href="{% static 'Fake/log/clockyIT1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT42' %}
+        <a href="{% static 'Fake/log/clockyIT2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT51' %}
+        <a href="{% static 'Fake/log/sveglia_ruote1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT52' %}
+        <a href="{% static 'Fake/log/sveglia_ruote2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT61' %}
+        <a href="{% static 'Fake/log/sveglia_che_scappa1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'IT62' %}
+        <a href="{% static 'Fake/log/sveglia_che_scappa2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR11' %}
+        <a href="{% static 'Fake/log/reveil_sur_ruote1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR12' %}
+        <a href="{% static 'Fake/log/reveil_sur_ruote2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR21' %}
+        <a href="{% static 'Fake/log/reveil_persecucion1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR31' %}
+        <a href="{% static 'Fake/log/reveil_ruotes1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR41' %}
+        <a href="{% static 'Fake/log/clockyFR1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR51' %}
+        <a href="{% static 'Fake/log/reveil_creatif_ruote1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'FR61' %}
+        <a href="{% static 'Fake/log/reveil_fugitif1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE11' %}
+        <a href="{% static 'Fake/log/wecker_auf_radern_1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE12' %}
+        <a href="{% static 'Fake/log/wecker_auf_radern_2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE21' %}
+        <a href="{% static 'Fake/log/wecker_radern1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE22' %}
+        <a href="{% static 'Fake/log/wecker_radern2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE31' %}
+        <a href="{% static 'Fake/log/wecker_weglaufender1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE32' %}
+        <a href="{% static 'Fake/log/wecker_weglaufender2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE41' %}
+        <a href="{% static 'Fake/log/clockyDE1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE51' %}
+        <a href="{% static 'Fake/log/wecker_clocky1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE61' %}
+        <a href="{% static 'Fake/log/rollender_wecker1.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'DE62' %}
+        <a href="{% static 'Fake/log/rollender_wecker2.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'clockyKeyCA' %}
+        <a href="{% static 'Fake/log/clockyCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ALOWCA' %}
+        <a href="{% static 'Fake/log/Alarm_Clock_On_WheelsCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'ALOW2CA' %}
+        <a href="{% static 'Fake/log/Alarm_Clock_On_Wheels2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RACCA' %}
+        <a href="{% static 'Fake/log/Running_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RAC2CA' %}
+        <a href="{% static 'Fake/log/Running_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'CACCA' %}
+        <a href="{% static 'Fake/log/Creative_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'CAC2CA' %}
+        <a href="{% static 'Fake/log/Creative_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RunACCA' %}
+        <a href="{% static 'Fake/log/Runaway_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RunAC2CA' %}
+        <a href="{% static 'Fake/log/Runaway_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'EACCA' %}
+        <a href="{% static 'Fake/log/Escape_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'EAC2CA' %}
+        <a href="{% static 'Fake/log/Escape_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'WACCA' %}
+        <a href="{% static 'Fake/log/Wheel_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'WAC2CA' %}
+        <a href="{% static 'Fake/log/Wheel_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'JACCA' %}
+        <a href="{% static 'Fake/log/Jumping_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'JAC2CA' %}
+        <a href="{% static 'Fake/log/Jumping_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'AWCA' %}
+        <a href="{% static 'Fake/log/Alarm_WheelsCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'AW2CA' %}
+        <a href="{% static 'Fake/log/Alarm_Wheels2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'MACCA' %}
+        <a href="{% static 'Fake/log/Moving_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'MAC2CA' %}
+        <a href="{% static 'Fake/log/Moving_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RRACCA' %}
+        <a href="{% static 'Fake/log/Run_Alarm_ClockCA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'RRAC2CA' %}
+        <a href="{% static 'Fake/log/Run_Alarm_Clock2CA.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'amazonCH' %}
+        <a href="{% static 'Fake/log/Amazon_China.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% elif page == 'amazonSG' %}
+        <a href="{% static 'Fake/log/Amazon_SG.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a>
+    {% endif %}
+</center>
+{% endblock content %}

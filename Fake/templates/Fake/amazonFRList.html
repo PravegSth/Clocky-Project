@@ -1,0 +1,13 @@
+{% extends 'Fake/main.html' %}
+{% load static %}
+{% block content %}
+<img src="{% static 'Fake/images/amazon.png' %}" style="width: 100%; height: 110%; position: absolute; z-index: -1;">
+<div style="margin-top: 20px;"><center>
+<a href="{% url 'FR11' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil sur ruote 1</button></a>
+<a href="{% url 'FR12' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil sur ruote 2</button></a><br>
+<a href="{% url 'FR21' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil persecución</button></a><br>
+<a href="{% url 'FR31' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil ruote</button></a><br>
+<a href="{% url 'FR41' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">clocky</button></a><br>
+<a href="{% url 'FR51' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil creatif ruote</button></a><br>
+<a href="{% url 'FR61' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">reveil fugitif</button></a></center> </div>
+{% endblock content %}

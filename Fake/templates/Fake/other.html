@@ -1,0 +1,13 @@
+{% extends 'Fake/main.html' %}
+{% load static %}
+{% block content %}
+<img src="{% static 'Fake/images/other.png' %}" style="width: 100%; height: 110%; position: absolute; z-index: -1;">
+<div style="margin-top: 20px;"><center>
+<a href="{% url 'Alibaba' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Alibaba</button></a>
+<a href="{% url 'Aliexpress' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Aliexpress</button></a>
+<a href="{% url 'Walmart' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Walmart</button></a>
+<a href="{% url 'Mercari' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Mercari</button></a>
+<a href="{% url 'Allegro' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Allegro</button></a>
+<a href="{% url 'Bol' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Bol</button></a>
+<a href="{% url 'JapanYahoo' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Japan Yahoo</button></a></center></div>
+{% endblock content %}

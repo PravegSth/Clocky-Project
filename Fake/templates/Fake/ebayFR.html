@@ -1,0 +1,8 @@
+{% extends 'Fake/main.html' %}
+{% load static %}
+{% block content %}
+<br>
+<center><h2>Log File Created</h2></center>
+<br>
+<center><a href="{% static 'Fake/log/ebayFR.csv' %}" class="btn btn-secondary px-4 py-2 btn-sm">Download File</a></center>
+{% endblock content %}

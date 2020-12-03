@@ -1,0 +1,27 @@
+{% extends 'Fake/main.html' %}
+{% load static %}
+{% block content %}
+<img src="{% static 'Fake/images/amazon.png' %}" style="width: 100%; height: 110%; position: absolute; z-index: -1;">
+<div style="margin-top: 20px;"><center>
+<a href="{% url 'clockyKeyCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Clocky</button></a><br>
+<a href="{% url 'ALOWCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Alarm Clock on Wheels 1</button></a>
+<a href="{% url 'ALOW2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Alarm Clock on Wheels 2</button></a><br>
+<a href="{% url 'RACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Running Alarm Clock 1</button></a>
+<a href="{% url 'RAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Running Alarm Clock 2</button></a><br>
+<a href="{% url 'CACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Creative Alarm Clock 1</button></a>
+<a href="{% url 'CAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Creative Alarm Clock 2</button></a><br>
+<a href="{% url 'RunACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Runaway Alarm Clock 1</button></a>
+<a href="{% url 'RunAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Runaway Alarm Clock 2</button></a><br>
+<a href="{% url 'EACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Escape Alarm Clock 1</button></a>
+<a href="{% url 'EAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Escape Alarm Clock 2</button></a><br>
+<a href="{% url 'WACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Wheel Alarm Clock 1</button></a>
+<a href="{% url 'WAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Wheel Alarm Clock 2</button></a><br>
+<a href="{% url 'JACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Jumping Alarm Clock 1</button></a>
+<a href="{% url 'JAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Jumping Alarm Clock 2</button></a><br>
+<a href="{% url 'AWCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Alarm Wheels 1</button></a>
+<a href="{% url 'AW2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Alarm Wheels 2</button></a><br>
+<a href="{% url 'MACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Moving Alarm Clock 1</button></a>
+<a href="{% url 'MAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Moving Alarm Clock 2</button></a><br>
+<a href="{% url 'RRACCA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Run Alarm Clock 1</button></a>
+<a href="{% url 'RRAC2CA' %}"><button class="btn btn-primary" style="margin-right: 20px; margin-bottom: 10px;">Run Alarm Clock 2</button></a></center> </div>
+{% endblock content %}
